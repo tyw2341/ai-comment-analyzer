@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "AI 评论分析助手",
+  "description": "分析跨境电商评论，提供情感分析和摘要。",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "http://localhost:8000/*"
+  ]
+}
